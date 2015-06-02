@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <checkout translate="label" module="checkout">
+            <groups>
+                <cart_restrictions translate="label">
+                    <label>Cart Restrictions</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <promotion_rule translate="label">
+                            <label>Cart Restriction Promotion Rule</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </promotion_rule>
+                        <error_message translate="label">
+                            <label>Error Message</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </error_message>
+                    </fields>
+                </cart_restrictions>
+            </groups>
+        </checkout>
+    </sections>
+</config>

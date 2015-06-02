@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Parassood_CartRestrictions>
+            <version>0.0.1</version>
+        </Parassood_CartRestrictions>
+    </modules>
+    <global>
+        <models>
+            <cartrestrictions>
+                <class>Parassood_CartRestrictions_Model</class>
+            </cartrestrictions>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <sales_quote_save_commit_after>
+                <observers>
+                    <cartrestriction_quote_observer>
+                        <type>singleton</type>
+                        <class>cartrestrictions/observer</class>
+                        <method>validateCartItems</method>
+                    </cartrestriction_quote_observer>
+                </observers>
+            </sales_quote_save_commit_after>
+        </events>
+    </frontend>
+</config>
